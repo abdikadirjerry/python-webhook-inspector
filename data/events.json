@@ -1,0 +1,41 @@
+[
+  {
+    "id": "evt-9f8a1b",
+    "method": "POST",
+    "endpoint": "/webhook/stripe-billing",
+    "source_ip": "54.187.174.169",
+    "content_type": "application/json",
+    "headers": {
+      "User-Agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+      "X-Stripe-Signature": "t=1794851400,v1=8a9c4e2f1d...",
+      "Content-Type": "application/json"
+    },
+    "payload": {
+      "type": "invoice.payment_succeeded",
+      "data": {
+        "customer_id": "cus_N9x21Lp",
+        "amount_paid": 4900,
+        "currency": "usd"
+      }
+    },
+    "timestamp": "2026-11-16 18:02:11"
+  },
+  {
+    "id": "evt-3c7d2e",
+    "method": "POST",
+    "endpoint": "/webhook/github-ci",
+    "source_ip": "140.82.115.42",
+    "content_type": "application/json",
+    "headers": {
+      "User-Agent": "GitHub-Hookshot/760256",
+      "X-GitHub-Event": "push",
+      "Content-Type": "application/json"
+    },
+    "payload": {
+      "ref": "refs/heads/main",
+      "repository": "abdikadir/python-webhook-inspector",
+      "commits_count": 3
+    },
+    "timestamp": "2026-11-16 18:04:45"
+  }
+]
